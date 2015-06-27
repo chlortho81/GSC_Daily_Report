@@ -4,7 +4,25 @@
   Ups (FirstUps and BBUps).
 */
 
+/* 
+  This method will contain the variables (desired outputs) of each Garlyn Shelton dealership.
+  For convenience, the code is arranged in pattern with Ed Whittle's infamous, "Report."
+  *NOTE* As of right now, the variables for "EOM <the previous year>", "As of current date of
+  previous year", and "Percent Plus or minus <MTD previous year>" do not exist; we do not
+  have the historical sales performance data for the Garlyn Shelton Companies.
+*/
 
+class Dealerec {
+    String location;
+    int sold;
+    int delivered;
+    int booked;
+    double percbooksold
+    // sales for the next day?? 
+    
+
+
+}
 
 class TheReport {
 
@@ -13,18 +31,18 @@ class TheReport {
         // Declare the variables that will make up each field on the report
         
         String DealerName;
-        double FirstUps;
-        double BBUps;
-        double FirstSold;
-        double BBSold;
-        double TotalUps;
-        double TotalSold;
+        int FirstUps;
+        int BBUps;
+        int FirstSold;
+        int BBSold;
+        int TotalUps;
+        int TotalSold;
 
         // Declare variables to make up the success percantages
 
-        double FirstClosePercent;
-        double BBClosePercent;
-        double TotalClosePercent;
+        float FirstClosePercent;
+        float BBClosePercent;
+        float TotalClosePercent;
         
         // Assign values to the floor traffic 
         
