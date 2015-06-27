@@ -2,6 +2,8 @@
   This is the hard-coded template for Dad's report. It is to be an applet with fields
   where he can enter the quantity of Demos, Worksheets, Solds (First and BB), and total
   Ups (FirstUps and BBUps).
+
+  BY: Aaron Whittle, Programmer Extraordinair
 */
 
 /* 
@@ -14,12 +16,33 @@
 
 class Dealerec {
     String location;
-    int sold;
+    int firstsold;
     int delivered;
     int booked;
-    double percbooksold
-    // sales for the next day?? 
+    int firstups;
+    int bbups;
+    int firstups;
+    int bbsold;
+    int totalups;
+    int totalsold;
+
+    // RE: Field J1 - What is this, sales for the next day?? 
     
+    void calc_booked_sold_percent() {  // This needs to return a percentage
+        System.out.printf("The booked to sold ratio is %% %.0f", (booked / sold * 100) + .5)subl;
+    }
+
+    void calc_first_close_percent() {  // This needs to return a percentage
+        System.out.printf("The first time close percentage is " + (firstsold / firstups * 100));
+    }
+
+    void calc_bb_close_percent() { // This needs to return a percentage
+        System.out.printf("The BeBack close percentage is " + (bbsold / bbups));
+    }
+
+    void calc_total_close_percent() { // This needs to return a percentage
+        System.out.println("The total closing percentage is " + (totalsold / totalups));
+    }
 
 
 }
@@ -28,29 +51,20 @@ class TheReport {
 
     public static void main(String args[]) {
 
-        // Declare the variables that will make up each field on the report
-        
-        String DealerName;
-        int FirstUps;
-        int BBUps;
-        int FirstSold;
-        int BBSold;
-        int TotalUps;
-        int TotalSold;
+        Dealerec bmwvolvomazda = new Dealerec();
+        Dealerec cadillac = new Dealerec();
+        Dealerec nissan = new Dealerec();
+        Dealerec vwtemple = new Dealerec();
+        Dealerec mercedes = new Dealerec();
+        Dealerec bryan = new Dealerec();
 
-        // Declare variables to make up the success percantages
-
-        float FirstClosePercent;
-        float BBClosePercent;
-        float TotalClosePercent;
         
-        // Assign values to the floor traffic 
+        // Assign values to each dealerships' variables
         
-        DealerName = "Cadillac";
-        FirstUps = 10;
-        BBUps = 7;
-        FirstSold = 2;
-        BBSold = 4;
+        bmwvolvomazda.location = "BMW/VOL/MAZ"):
+        bmwvolvomazda.totalsold = 39; // hard-coded number that will eventually be polled from DMS
+        bmwvolvomazda.delivered = 28; // hard-coded number that will eventually be polled from DMS
+        bmwvolvomazda.booked = 25; // hard-coded number that will eventually be polled from DMS
             
         // Make calculations
 
