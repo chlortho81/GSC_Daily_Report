@@ -1,11 +1,11 @@
 class Percrec {
 	String name;
 	int sold;
-	int booked;
+	double booked;
 
 	double calc_percent() {
 		double d;
-		d = (((float)booked / sold * 100) + .5);
+		d = ((booked / sold * 100) + .5);
 		System.out.printf("The percent is %.0f %%", d);
 		return d;
 	}

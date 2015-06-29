@@ -16,35 +16,40 @@
 
 class Dealerec {
     String location;
-    int firstsold;
-    int delivered;
-    int booked;
-    int firstups;
-    int bbups;
-    int firstups;
-    int bbsold;
-    int totalups;
-    int totalsold;
+    double firstsold;
+    double delivered;
+    double booked;
+    double firstups;
+    double bbups;
+    double bbsold;
+    double totalups;
+    double totalsold;
 
-    // RE: Field J1 - What is this, sales for the next day?? 
-    
-    void calc_booked_sold_percent() {  // This needs to return a percentage
-        System.out.printf("The booked to sold ratio is %% %.0f", (booked / sold * 100) + .5)subl;
+    // RE: Field J1 - What is this, sales for the next day??
+
+    double calc_booked_sold_percent() {  // This needs to return a percentage
+        double x = ((booked / totalsold * 100) + .5);
+        System.out.printf("The booked to sold ratio is %.0f %%", x);
+        return x;
     }
 
-    void calc_first_close_percent() {  // This needs to return a percentage
-        System.out.printf("The first time close percentage is " + (firstsold / firstups * 100));
+    double calc_first_close_percent() {  // This needs to return a percentage
+        double y = ((firstsold / firstups * 100) + .5);
+        System.out.printf("The first time close percentage is %.0f %%", y);
+        return y;
     }
 
-    void calc_bb_close_percent() { // This needs to return a percentage
-        System.out.printf("The BeBack close percentage is " + (bbsold / bbups));
+    double calc_bb_close_percent() { // This needs to return a percentage
+        double z = ((bbsold / bbups * 100) + .5);
+        System.out.printf("The BeBack close percentage is %.0f %%", z);
+        return z;
     }
 
-    void calc_total_close_percent() { // This needs to return a percentage
-        System.out.println("The total closing percentage is " + (totalsold / totalups));
+    double calc_total_close_percent() { // This needs to return a percentage
+        double w = ((totalsold / totalups * 100) + .5);
+        System.out.printf("The total closing percentage is %.0f %%", w);
+        return w;
     }
-
-
 }
 
 class TheReport {
@@ -61,41 +66,22 @@ class TheReport {
         
         // Assign values to each dealerships' variables
         
-        bmwvolvomazda.location = "BMW/VOL/MAZ"):
-        bmwvolvomazda.totalsold = 39; // hard-coded number that will eventually be polled from DMS
-        bmwvolvomazda.delivered = 28; // hard-coded number that will eventually be polled from DMS
-        bmwvolvomazda.booked = 25; // hard-coded number that will eventually be polled from DMS
-            
+        bmwvolvomazda.location = "BMW/VOL/MAZ";
+        bmwvolvomazda.totalsold = 39; 
+        bmwvolvomazda.firstsold = 20; 
+        bmwvolvomazda.delivered = 28; 
+        bmwvolvomazda.booked = 25; 
+        bmwvolvomazda.bbsold = 19; 
+        bmwvolvomazda.totalups = 100; 
+        bmwvolvomazda.bbups = 38;
+        bmwvolvomazda.firstsold = 62;
+
         // Make calculations
 
-        TotalUps = (FirstUps + BBUps);
-        TotalSold = (FirstSold + BBSold);
-        FirstClosePercent = (FirstSold / FirstUps);
-        BBClosePercent = (BBSold / BBUps);
-        TotalClosePercent = (TotalSold / TotalUps);
-
-        // Display Totals
-        
-        System.out.println("First Up = " + FirstUps);
-
-        System.out.println("BeBacks = " + BBUps);
-
-        System.out.println("Total Ups = " + TotalUps);
-
-        System.out.println("First Time Sold = " + FirstSold);
-
-        System.out.println("BeBack Sold = " + BBSold);
-
-        System.out.println("Total Sold = " + TotalSold);
-
-        // Display Pecentages
-
-        System.out.println("BeBack sold percentage = " + BBClosePercent);
-
-        System.out.println("First time sold percentage = " + FirstClosePercent);
-
-        System.out.println("Overall closing percentage = " + TotalClosePercent);
-
+        calc_total_close_percent.bmwvolvomazda();
+        calc_bb_close_percent.bmwvolvomazda();
+        calc_first_close_percent.bmwvolvomazda();
+        calc_booked_sold_percent.bmwvolvomazda();
     }
 }
 
