@@ -107,14 +107,201 @@ class TheReport {
         System.out.println("The number beback sold is: ");
         bmwvolvomazda.bbsold = in.nextDouble();
 
+        // Cadillac
+
+        cadillac.location = "Cadillac";
+
+        System.out.println("Enter the numbers for: " + cadillac.location);
+        System.out.println();
+
+        System.out.println("The Total Sold for the month is: ");
+        cadillac.totalsold = in.nextDouble();
+
+        System.out.println("The number of cars delivered for the month is: ");
+        cadillac.delivered = in.nextDouble();
+
+        System.out.println("The number of cars booked for the month is: ");
+        cadillac.booked = in.nextDouble();
+
+        System.out.println("The total ups for the month is: ");
+        cadillac.totalups = in.nextDouble();
+
+        System.out.println("The total of first ups for the month is: ");
+        cadillac.firstups = in.nextDouble();
+
+        System.out.println("The first sold for the month is: ");
+        cadillac.firstsold = in.nextDouble();
+
+        System.out.println("The number of beback ups is: ");
+        cadillac.bbups = in.nextDouble();
+
+        System.out.println("The number beback sold is: ");
+        cadillac.bbsold = in.nextDouble();
+
+        // Nissan
+
+        nissan.location = "Nissan";
+
+        System.out.println("Enter the numbers for: " + nissan.location);
+        System.out.println();
+
+        System.out.println("The Total Sold for the month is: ");
+        nissan.totalsold = in.nextDouble();
+
+        System.out.println("The number of cars delivered for the month is: ");
+        nissan.delivered = in.nextDouble();
+
+        System.out.println("The number of cars booked for the month is: ");
+        nissan.booked = in.nextDouble();
+
+        System.out.println("The total ups for the month is: ");
+        nissan.totalups = in.nextDouble();
+
+        System.out.println("The total of first ups for the month is: ");
+        nissan.firstups = in.nextDouble();
+
+        System.out.println("The first sold for the month is: ");
+        nissan.firstsold = in.nextDouble();
+
+        System.out.println("The number of beback ups is: ");
+        nissan.bbups = in.nextDouble();
+
+        System.out.println("The number beback sold is: ");
+        nissan.bbsold = in.nextDouble();
+
+        // VWTemple
+
+        vwtemple.location = "Nissan";
+
+        System.out.println("Enter the numbers for: " + vwtemple.location);
+        System.out.println();
+
+        System.out.println("The Total Sold for the month is: ");
+        vwtemple.totalsold = in.nextDouble();
+
+        System.out.println("The number of cars delivered for the month is: ");
+        vwtemple.delivered = in.nextDouble();
+
+        System.out.println("The number of cars booked for the month is: ");
+        vwtemple.booked = in.nextDouble();
+
+        System.out.println("The total ups for the month is: ");
+        vwtemple.totalups = in.nextDouble();
+
+        System.out.println("The total of first ups for the month is: ");
+        vwtemple.firstups = in.nextDouble();
+
+        System.out.println("The first sold for the month is: ");
+        vwtemple.firstsold = in.nextDouble();
+
+        System.out.println("The number of beback ups is: ");
+        vwtemple.bbups = in.nextDouble();
+
+        System.out.println("The number beback sold is: ");
+        vwtemple.bbsold = in.nextDouble();
+
+        // Mercedes
+
+        mercedes.location = "BMW/VOL/MAZ";
+
+        System.out.println("Enter the numbers for: " + mercedes.location);
+        System.out.println();
+
+        System.out.println("The Total Sold for the month is: ");
+        mercedes.totalsold = in.nextDouble();
+
+        System.out.println("The number of cars delivered for the month is: ");
+        mercedes.delivered = in.nextDouble();
+
+        System.out.println("The number of cars booked for the month is: ");
+        mercedes.booked = in.nextDouble();
+
+        System.out.println("The total ups for the month is: ");
+        mercedes.totalups = in.nextDouble();
+
+        System.out.println("The total of first ups for the month is: ");
+        mercedes.firstups = in.nextDouble();
+
+        System.out.println("The first sold for the month is: ");
+        mercedes.firstsold = in.nextDouble();
+
+        System.out.println("The number of beback ups is: ");
+        mercedes.bbups = in.nextDouble();
+
+        System.out.println("The number beback sold is: ");
+        mercedes.bbsold = in.nextDouble();
+
+        // Bryan Imports
+
+        bryan.location = "BMW/VOL/MAZ";
+
+        System.out.println("Enter the numbers for: " + bryan.location);
+        System.out.println();
+
+        System.out.println("The Total Sold for the month is: ");
+        bryan.totalsold = in.nextDouble();
+
+        System.out.println("The number of cars delivered for the month is: ");
+        bryan.delivered = in.nextDouble();
+
+        System.out.println("The number of cars booked for the month is: ");
+        bryan.booked = in.nextDouble();
+
+        System.out.println("The total ups for the month is: ");
+        bryan.totalups = in.nextDouble();
+
+        System.out.println("The total of first ups for the month is: ");
+        bryan.firstups = in.nextDouble();
+
+        System.out.println("The first sold for the month is: ");
+        bryan.firstsold = in.nextDouble();
+
+        System.out.println("The number of beback ups is: ");
+        bryan.bbups = in.nextDouble();
+
+        System.out.println("The number beback sold is: ");
+        bryan.bbsold = in.nextDouble();
+        // Let's output the percentages
+
         System.out.println("Here are your percentages: ");
         System.out.println();
         
         // Let's instantiate our methods from class Dealerec
-
+        
+        System.out.println("BMW/VOL/MAZ");
         booked_sold_percent = bmwvolvomazda.calc_booked_sold_percent();
         first_close_percent = bmwvolvomazda.calc_first_close_percent();
         bb_close_percent = bmwvolvomazda.calc_bb_close_percent();
-        total_close_percent = bmwvolvomazda.calc_total_close_percent();   
+        total_close_percent = bmwvolvomazda.calc_total_close_percent();
+
+        System.out.println("Cadillac");
+        booked_sold_percent = cadillac.calc_booked_sold_percent();
+        first_close_percent = cadillac.calc_first_close_percent();
+        bb_close_percent = cadillac.calc_bb_close_percent();
+        total_close_percent = cadillac.calc_total_close_percent();
+
+        System.out.println("Nissan");
+        booked_sold_percent = nissan.calc_booked_sold_percent();
+        first_close_percent = nissan.calc_first_close_percent();
+        bb_close_percent = nissan.calc_bb_close_percent();
+        total_close_percent = nissan.calc_total_close_percent();
+
+        System.out.println("VW Temple");
+        booked_sold_percent = vwtemple.calc_booked_sold_percent();
+        first_close_percent = vwtemple.calc_first_close_percent();
+        bb_close_percent = vwtemple.calc_bb_close_percent();
+        total_close_percent = vwtemple.calc_total_close_percent();
+
+        System.out.println("Mercedes Benz of Georgetown");
+        booked_sold_percent = mercedes.calc_booked_sold_percent();
+        first_close_percent = mercedes.calc_first_close_percent();
+        bb_close_percent = mercedes.calc_bb_close_percent();
+        total_close_percent = mercedes.calc_total_close_percent();
+
+        System.out.println("Bryan Imports");
+        booked_sold_percent = bryan.calc_booked_sold_percent();
+        first_close_percent = bryan.calc_first_close_percent();
+        bb_close_percent = bryan.calc_bb_close_percent();
+        total_close_percent = bryan.calc_total_close_percent();   
     }
 }
