@@ -6,7 +6,7 @@
   BY: Aaron Whittle, Programmer Extraordinair
 */
 
-/* 
+/*
   This method will contain the variables (desired outputs) of each Garlyn Shelton dealership.
   For convenience, the code is arranged in pattern with Ed Whittle's infamous, "Report."
   *NOTE* As of right now, the variables for "EOM <the previous year>", "As of current date of
@@ -20,7 +20,8 @@ class Dealerec {
     double delivered;
     double booked;
     double firstups;
-    double bbups;
+    double bbups;..2645n k
+
     double bbsold;
     double totalups;
     double totalsold;
@@ -63,16 +64,16 @@ class TheReport {
         Dealerec mercedes = new Dealerec();
         Dealerec bryan = new Dealerec();
 
-        
+
         // Assign values to each dealerships' variables
-        
+
         bmwvolvomazda.location = "BMW/VOL/MAZ";
-        bmwvolvomazda.totalsold = 39; 
-        bmwvolvomazda.firstsold = 20; 
-        bmwvolvomazda.delivered = 28; 
-        bmwvolvomazda.booked = 25; 
-        bmwvolvomazda.bbsold = 19; 
-        bmwvolvomazda.totalups = 100; 
+        bmwvolvomazda.totalsold = 39;
+        bmwvolvomazda.firstsold = 20;
+        bmwvolvomazda.delivered = 28;
+        bmwvolvomazda.booked = 25;
+        bmwvolvomazda.bbsold = 19;
+        bmwvolvomazda.totalups = 100;
         bmwvolvomazda.bbups = 38;
         bmwvolvomazda.firstsold = 62;
 
@@ -84,8 +85,3 @@ class TheReport {
         calc_booked_sold_percent.bmwvolvomazda();
     }
 }
-
-
-
-
-
