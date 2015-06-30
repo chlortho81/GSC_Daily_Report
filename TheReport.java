@@ -14,6 +14,10 @@
   have the historical sales performance data for the Garlyn Shelton Companies.
 */
 
+package GSC_Daily_Report;
+import java.util.Sanner;
+
+
 class Dealerec {
     String location;
     double firstsold;
@@ -63,7 +67,10 @@ class TheReport {
         Dealerec vwtemple = new Dealerec();
         Dealerec mercedes = new Dealerec();
         Dealerec bryan = new Dealerec();
-
+        
+        double calc_booked_sold_percent, calc_first_close_percent, calc_bb_close_percent, calc_total_close_percent;
+        
+        Scanner in = new Scanner(System.in);
 
         // Assign values to each dealerships' variables
 
