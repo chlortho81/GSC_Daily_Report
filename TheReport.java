@@ -76,7 +76,12 @@ class TheReport {
 
         // Assign values to each dealerships' variables
 
+        // BMW/VOL/MAZ
+
         bmwvolvomazda.location = "BMW/VOL/MAZ";
+
+        System.out.println("Enter the numbers for: " + bmwvolvomazda.location);
+        System.out.println();
 
         System.out.println("The Total Sold for the month is: ");
         bmwvolvomazda.totalsold = in.nextDouble();
@@ -101,7 +106,7 @@ class TheReport {
 
         System.out.println("The number beback sold is: ");
         bmwvolvomazda.bbsold = in.nextDouble();
-                
+
         System.out.println("Here are your percentages: ");
         System.out.println();
         
