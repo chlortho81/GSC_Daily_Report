@@ -56,7 +56,7 @@ class Dealerec {
         System.out.printf("The total closing percentage is %.0f %%", w);
         System.out.println();
         return w;
-    }
+    }    
 }
 
 class TheReport {
@@ -69,9 +69,9 @@ class TheReport {
         Dealerec vwtemple = new Dealerec();
         Dealerec mercedes = new Dealerec();
         Dealerec bryan = new Dealerec();
-        
+          
         double booked_sold_percent, first_close_percent, bb_close_percent, total_close_percent = 0;
-        
+                
         Scanner in = new Scanner(System.in);
 
         // Assign values to each dealerships' variables
@@ -202,7 +202,7 @@ class TheReport {
 
         // Mercedes
 
-        mercedes.location = "BMW/VOL/MAZ";
+        mercedes.location = "Mercedes Benz of Georgetown";
 
         System.out.println("Enter the numbers for: " + mercedes.location);
         System.out.println();
@@ -233,7 +233,7 @@ class TheReport {
 
         // Bryan Imports
 
-        bryan.location = "BMW/VOL/MAZ";
+        bryan.location = "Bryan Imports";
 
         System.out.println("Enter the numbers for: " + bryan.location);
         System.out.println();
@@ -265,9 +265,51 @@ class TheReport {
 
         System.out.println("Here are your percentages: ");
         System.out.println();
+
+        // Let's create the inner class of type = CompanyWide
+
+        class CompanyWide {
+            String location;
+            double company_totalsold;
+            double company_delivered;
+            double company_booked;
+            double company_totalups;
+            double company_firstups;
+            double company_firstsold;
+            double company_bbups;
+            double company_bbsold;
+
+            double calc_company_booked_sold_percent(){
+            double a = (((bmwvolvomazda.booked + cadillac.booked + nissan.booked + vwtemple.booked + mercedes.booked + bryan.booked) / (bmwvolvomazda.totalsold + cadillac.totalsold + nissan.totalsold + vwtemple.totalsold + mercedes.totalsold + bryan.totalsold) * 100) + .5);
+            System.out.printf("The booked-to-sold ratio for the company is %.0f %%", a);
+            System.out.println();
+            return a;
+            }
+            double calc_company_first_close_percent(){
+                double b = (((bmwvolvomazda.firstsold + cadillac.firstsold + nissan.firstsold + vwtemple.firstsold + mercedes.firstsold + bryan.firstsold) / (bmwvolvomazda.firstups + cadillac.firstups + nissan.firstups + vwtemple.firstups + mercedes.firstups + bryan.firstups) * 100) + .5);
+                System.out.printf("The first time close percentage for the company is %.0f %%", b);
+                System.out.println();
+                return b;
+            }
+            double calc_company_bb_close_percent(){
+                double c = (((bmwvolvomazda.bbsold + cadillac.bbsold + nissan.bbsold + vwtemple.bbsold + mercedes.bbsold + bryan.bbsold) / (bmwvolvomazda.bbups + cadillac.bbups + nissan.bbups + vwtemple.bbups + mercedes.bbups + bryan.bbups) * 100) + .5);
+                System.out.printf("The beback close percentage for the company is %.0f %%", c);
+                System.out.println();
+                return c;
+            }
+        double calc_company_total_close_percent(){
+                double d = (((bmwvolvomazda.totalsold + cadillac.totalsold + nissan.totalsold + vwtemple.totalsold + mercedes.totalsold + bryan.totalsold) / (bmwvolvomazda.totalups + cadillac.totalups + nissan.totalups + vwtemple.totalups + mercedes.totalups + bryan.totalups) * 100) + .5);
+                System.out.printf("The total closing percentage for the company is %.0f %%", d);
+                System.out.println();
+                return d;
+            }
+        }
+
+        CompanyWide gsCompanies = new CompanyWide();
+        double company_booked_sold_percent, company_first_close_percent, company_bb_close_percent, company_total_close_percent = 0;
         
         // Let's instantiate our methods from class Dealerec
-        
+
         System.out.println("BMW/VOL/MAZ");
         booked_sold_percent = bmwvolvomazda.calc_booked_sold_percent();
         first_close_percent = bmwvolvomazda.calc_first_close_percent();
@@ -302,6 +344,13 @@ class TheReport {
         booked_sold_percent = bryan.calc_booked_sold_percent();
         first_close_percent = bryan.calc_first_close_percent();
         bb_close_percent = bryan.calc_bb_close_percent();
-        total_close_percent = bryan.calc_total_close_percent();   
+        total_close_percent = bryan.calc_total_close_percent();
+
+        System.out.println("Garlyn Shelton Companies");
+        company_booked_sold_percent = gsCompanies.calc_company_booked_sold_percent();
+        company_first_close_percent = gsCompanies.calc_company_first_close_percent();
+        company_bb_close_percent = gsCompanies.calc_company_bb_close_percent();
+        company_total_close_percent = gsCompanies.calc_company_total_close_percent();
+
     }
 }
