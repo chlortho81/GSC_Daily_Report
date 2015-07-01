@@ -351,6 +351,6 @@ class TheReport {
         company_first_close_percent = gsCompanies.calc_company_first_close_percent();
         company_bb_close_percent = gsCompanies.calc_company_bb_close_percent();
         company_total_close_percent = gsCompanies.calc_company_total_close_percent();
-
+// git sync for me!
     }
 }
