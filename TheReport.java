@@ -297,7 +297,7 @@ class TheReport {
                 System.out.println();
                 return c;
             }
-        double calc_company_total_close_percent(){
+        	double calc_company_total_close_percent(){
                 double d = (((bmwvolvomazda.totalsold + cadillac.totalsold + nissan.totalsold + vwtemple.totalsold + mercedes.totalsold + bryan.totalsold) / (bmwvolvomazda.totalups + cadillac.totalups + nissan.totalups + vwtemple.totalups + mercedes.totalups + bryan.totalups) * 100) + .5);
                 System.out.printf("The total closing percentage for the company is %.0f %%", d);
                 System.out.println();
