@@ -7,7 +7,7 @@
 */
 
 /*
-  This method will contain the variables (desired outputs) of each Garlyn Shelton dealership.
+  This class will contain the variables (desired outputs) of each Garlyn Shelton dealership.
   For convenience, the code is arranged in pattern with Ed Whittle's infamous, "Report."
   *NOTE* As of right now, the variables for "EOM <the previous year>", "As of current date of
   previous year", and "Percent Plus or minus <MTD previous year>" do not exist; we do not
@@ -16,7 +16,7 @@
 
 import java.util.Scanner;
 
-
+// 
 class Dealerec {
     String location;
     double firstsold;
@@ -30,13 +30,18 @@ class Dealerec {
 
     // RE: Field J1 - What is this, sales for the next day??
 
-    double calc_booked_sold_percent() {  // This needs to return a percentage
+    /*
+        This method will calculate the dealer's booked-to-sold ratio. It must return a percentage. 
+    */
+    double calc_booked_sold_percent() {  
         double x = ((booked / totalsold * 100) + .5);
         System.out.printf("The booked to sold ratio is %.0f %%", x);
         System.out.println();
         return x;
     }
-
+    /*
+        This method will calculate the dealer's booked-to-sold ratio. It must return a percentage. 
+    */    
     double calc_first_close_percent() {  // This needs to return a percentage
         double y = ((firstsold / firstups * 100) + .5);
         System.out.printf("The first time close percentage is %.0f %%", y);
